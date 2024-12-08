@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="vendor/bootstrap-icons/bootstrap-icons.min.css"
+    />
+
+    <!-- Bootstrap icon CSS -->
+    <link
+      rel="stylesheet"
+      href="vendor/bootstrap-icons/bootstrap-icons.min.css"
+    />
+
+    <!-- Mon CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .card {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .card-second {
+        width: 45%;
+        margin: 0 auto;
+      }
+
+      @media screen and (min-width: 100px) and (max-width: 995px) {
+        .card {
+          width: 100%;
+          margin: 0;
+        }
+
+        .card-second {
+          width: 100%;
+          margin: 0;
+        }
+      }
+    </style>
+    <title>Saint Laurent</title>
+  </head>
+
+  <body>
+    <header class="header fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="navbar-brand h1 fs-1 fw-bold text-white">
+            <img
+              src="assets/images/logo/1729515069044.png"
+              class="imgbrand"
+              alt=""
+            />
+            <span class="d-none d-md-inline-block text-brand"
+              >Academie St Laurent</span
+            >
+          </div>
+
+          <!-- button hamburger -->
+          <div
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </div>
+
+          <!-- Liste deroulante button hamburger -->
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  href="index.html"
+                  class="mylink nav-link text-light px-lg-4 px-0"
+                  >Acceuil</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="#secFormation"
+                  class="mylink nav-link text-light px-lg-4 px-0"
+                  >Nos formations</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="index.html#Apropos"
+                  class="mylink nav-link text-light px-lg-4 px-0"
+                  >Apropos</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="index.html#Contact"
+                  class="mylink nav-link text-light px-lg-4 px-0"
+                  >Contact</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  href="inscription.html"
+                  class="mylink nav-link text-light px-lg-4 px-0"
+                  >Inscription</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="section-recherche container">
+      <div class="input-group py-4">
+        <input
+          type="text"
+          class="form-control py-3"
+          id="search-barre"
+          aria-label="Text input with segmented dropdown button"
+          placeholder="Rechercher...."
+        />
+
+        <button type="button" class="btn btn-outline-secondary" id="btn-search">
+          <i class="bi bi-search"></i>
+        </button>
+
+        <button
+          type="button"
+          class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li>
+            <a class="dropdown-item" type="button" id="toutes-formations"
+              >Toutes les formations</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="secFormation bg-body-secondary">
+      <div class="container py-2">
+        <div class="secFormation-content py-2" id="secFormation-content"></div>
+      </div>
+    </div>
+
+    <!-- Bootstrap Js -->
+    <script src="vendor/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Activation Popover -->
+    <script>
+      const popoverTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="popover"]'
+      );
+      const popoverList = [...popoverTriggerList].map(
+        (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+      );
+    </script>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="vendor/bootstrap-icons/bootstrap-icons.min.css"
+    />
+
+    <!-- Bootstrap icon CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap-icons/bootstrap-icons.min.css">
+
+    <!-- Mon CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Saint Laurent</title>
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#menu">
+    <header class="header fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="navbar-brand h1 fs-1 fw-bold text-white">
+            <img
+              src="assets/images/logo/1729515069044.png"
+              class="imgbrand"
+              alt=""
+            />
+            <span class="d-none d-md-inline-block text-brand"
+              >Academie St Laurent</span
+            >
+          </div>
+
+          <!-- button hamburger -->
+          <div
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </div>
+
+          <!-- Liste deroulante button hamburger -->
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="#" class="mylink nav-link text-light px-lg-4 px-0"
+                  >Acceuil</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="formations.html" class="mylink nav-link text-light px-lg-4 px-0"
+                  >Nos formations</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#Apropos" class="mylink nav-link text-light px-lg-4 px-0"
+                  >Apropos</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="#Contact" class="mylink nav-link text-light px-lg-4 px-0"
+                  >Contact</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="inscription.html" class="mylink nav-link text-light px-lg-4 px-0"
+                  >Inscription</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-lg-8 col-md-10 mx-auto">
+              <p class="hero-text lead text-light fs-2">
+                Formez-vous aux <span>compétences</span> qui comptent et
+                préparez votre reussite professionnelle dès aujourd'hui. Nos
+                <span>formations</span> sont conçues pour tranformer vos
+                ambitions en <span>expertise</span>.
+              </p>
+
+              <a href="#secFormation" type="button" class="btn p-2 mb-md-3">
+                Découvrez nos formations
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-body-secondary" id="secFormation">
+        <div class="container py-5">
+          <div class="secformation-title">
+            <h2 id="nos-formations">Nos Formations</h2>
+            <hr />
+            <hr class="custom-hr" />
+          </div>
+
+          <div class="secformation-content py-4">
+            <div class="row g-4 mb-5">
+              <div class="col-lg-3 col-md-4">
+                <div class="card" id="patisserie">
+                  <img
+                    src="assets/images/patisserie.jpeg"
+                    alt=""
+                    class="card-img-top"
+                  />
+
+                  <div class="card-body">
+                    <h3 class="card-title fw-semibold">Patisserie</h3>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum a eius hic reprehenderit earum amet adipisci
+                      corrupti ex quod sequi vitae asperiores facilis molestias
+                      ut, sint ad similique qui consectetur!
+                    </p>
+                    <a type="button" class="btn btn-formation" data-bs-toggle="modal" data-bs-target="#exampleModal">En savoir plus</a>
+                    
+                    <!-- FENETRE MODAL -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">PATISSERIE</h1>
+                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+
+                          <div class="modal-body">
+                            <ul class="navbar nav">
+                              <li class="nav-item">
+                                <h3>Prérequis :</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non officiis nostrum doloremque id quam quibusdam.</p>
+                              </li>
+
+                              <li class="nav-item">
+                                <h3>Contenu:</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non officiis nostrum doloremque id quam quibusdam.</p>
+                              </li>
+
+                              <li class="nav-item">
+                                <h3>Débouchés:</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non officiis nostrum doloremque id quam quibusdam.</p>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="modal-footer">
+                            <a href="inscription.html" class="btn ">S'inscrire</a>
+                            <button class="fermer-btn" data-bs-dismiss="modal">Fermer</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4">
+                <div class="card" id="Coiffure">
+                  <img
+                    src="assets/images/coiffure.jpeg"
+                    alt=""
+                    class="card-img-top"
+                  />
+
+                  <div class="card-body">
+                    <h3 class="card-title fw-semibold">Coiffure</h3>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum a eius hic reprehenderit earum amet adipisci
+                      corrupti ex quod sequi vitae asperiores facilis molestias
+                      ut, sint ad similique qui consectetur!
+                    </p>
+                    <a type="button" class="btn btn-formation" data-bs-toggle="modal" data-bs-target="#exampleModalCoiffure">En savoir plus</a>
+                    
+                    <!-- FENETRE MODAL -->
+                    <div class="modal fade" id="exampleModalCoiffure" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">COIFFURE</h1>
+                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+
+                          <div class="modal-body">
+                            <ul class="navbar nav">
+                              <li class="nav-item">
+                                <h3>Prérequis :</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non officiis nostrum doloremque id quam quibusdam.</p>
+                              </li>
+
+                              <li class="nav-item">
+                                <h3>Contenu:</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non officiis nostrum doloremque id quam quibusdam.</p>
+                              </li>
+
+                              <li class="nav-item">
+                                <h3>Débouchés:</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non officiis nostrum doloremque id quam quibusdam.</p>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="modal-footer">
+                            <a href="inscription.html" class="btn ">S'inscrire</a>
+                            <button class="fermer-btn" data-bs-dismiss="modal">Fermer</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4">
+                <div class="card" id="Coupe-couture">
+                  <img
+                    src="assets/images/coupe.jpeg"
+                    alt=""
+                    class="card-img-top"
+                  />
+
+                  <div class="card-body">
+                    <h3 class="card-title fw-semibold">Coupe - Couture</h3>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum a eius hic reprehenderit earum amet adipisci
+                      corrupti ex quod sequi vitae asperiores facilis molestias
+                      ut, sint ad similique qui consectetur!
+                    </p>
+                    <a type="button" class="btn btn-formation" data-bs-toggle="modal" data-bs-target="#exampleModalCoupe">En savoir plus</a>
+                    
+                    <!-- FENETRE MODAL -->
+                    <div class="modal fade" id="exampleModalCoupe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">COUPE - COUTURE</h1>
+                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+
+                          <div class="modal-body">
+                            <ul class="navbar nav">
+                              <li class="nav-item">
+                                <h3>Prérequis :</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non officiis nostrum doloremque id quam quibusdam.</p>
+                              </li>
+
+                              <li class="nav-item">
+                                <h3>Contenu:</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non officiis nostrum doloremque id quam quibusdam.</p>
+                              </li>
+
+                              <li class="nav-item">
+                                <h3>Débouchés:</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non officiis nostrum doloremque id quam quibusdam.</p>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="modal-footer">
+                            <a href="inscription.html" class="btn ">S'inscrire</a>
+                            <button class="fermer-btn" data-bs-dismiss="modal">Fermer</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4">
+                <div class="card" id="Electricité">
+                  <img
+                    src="assets/images/freepik__candid-image-photography-natural-textures-highly-r__34431.jpeg"
+                    alt=""
+                    class="card-img-top"
+                  />
+
+                  <div class="card-body">
+                    <h3 class="card-title fw-semibold">Electricité</h3>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum a eius hic reprehenderit earum amet adipisci
+                      corrupti ex quod sequi vitae asperiores facilis molestias
+                      ut, sint ad similique qui consectetur!
+                    </p>
+                    <a type="button" class="btn btn-formation" data-bs-toggle="modal" data-bs-target="#exampleModalElec">En savoir plus</a>
+                    
+                    <!-- FENETRE MODAL -->
+                    <div class="modal fade" id="exampleModalElec" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">ELECTRICITE</h1>
+                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+
+                          <div class="modal-body">
+                            <ul class="navbar nav">
+                              <li class="nav-item">
+                                <h3>Prérequis :</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non officiis nostrum doloremque id quam quibusdam.</p>
+                              </li>
+
+                              <li class="nav-item">
+                                <h3>Contenu:</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non officiis nostrum doloremque id quam quibusdam.</p>
+                              </li>
+
+                              <li class="nav-item">
+                                <h3>Débouchés:</h3>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non officiis nostrum doloremque id quam quibusdam.</p>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <div class="modal-footer">
+                            <a href="inscription.html" class="btn ">S'inscrire</a>
+                            <button class="fermer-btn" data-bs-dismiss="modal">Fermer</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-4">
+              <div class="col-lg-3 col-md-4">
+                <div class="card" id="Froid">
+                  <img
+                    src="assets/images/freepik__candid-image-photography-natural-textures-highly-r__34432.jpeg"
+                    alt=""
+                    class="card-img-top"
+                  />
+
+                  <div class="card-body">
+                    <h3 class="card-title fw-semibold">Froid</h3>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum a eius hic reprehenderit earum amet adipisci
+                      corrupti ex quod sequi vitae asperiores facilis molestias
+                      ut, sint ad similique qui consectetur!
+                    </p>
+                    <a
+                      role="button"
+                      class="btn btn-formation"
+                      data-bs-toggle="popover"
+                      data-bs-placement="top"
+                      data-bs-content="Cette formation n'est pas encore disponible"
+                      >En savoir plus</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4">
+                <div class="card" id="Informatique">
+                  <img
+                    src="assets/images/freepik__candid-image-photography-natural-textures-highly-r__34432.jpeg"
+                    alt=""
+                    class="card-img-top"
+                  />
+
+                  <div class="card-body">
+                    <h3 class="card-title fw-semibold">Informatique</h3>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum a eius hic reprehenderit earum amet adipisci
+                      corrupti ex quod sequi vitae asperiores facilis molestias
+                      ut, sint ad similique qui consectetur!
+                    </p>
+                    <a
+                      role="button"
+                      class="btn btn-formation"
+                      data-bs-toggle="popover"
+                      data-bs-placement="top"
+                      data-bs-content="Cette formation n'est pas encore disponible"
+                      >En savoir plus</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4">
+                <div class="card" id="Audiovisuel">
+                  <img
+                    src="assets/images/freepik__candid-image-photography-natural-textures-highly-r__34432.jpeg"
+                    alt=""
+                    class="card-img-top"
+                  />
+
+                  <div class="card-body">
+                    <h3 class="card-title fw-semibold">Audiovisuel</h3>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum a eius hic reprehenderit earum amet adipisci
+                      corrupti ex quod sequi vitae asperiores facilis molestias
+                      ut, sint ad similique qui consectetur!
+                    </p>
+                    <a
+                      role="button"
+                      class="btn btn-formation"
+                      data-bs-toggle="popover"
+                      data-bs-placement="top"
+                      data-bs-content="Cette formation n'est pas encore disponible"
+                      >En savoir plus</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4">
+                <div class="card" id="Cuisine">
+                  <img
+                    src="assets/images/freepik__candid-image-photography-natural-textures-highly-r__34432.jpeg"
+                    alt=""
+                    class="card-img-top"
+                  />
+
+                  <div class="card-body">
+                    <h3 class="card-title fw-semibold">Cuisine</h3>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum a eius hic reprehenderit earum amet adipisci
+                      corrupti ex quod sequi vitae asperiores facilis molestias
+                      ut, sint ad similique qui consectetur!
+                    </p>
+                    <a
+                      role="button"
+                      class="btn btn-formation"
+                      data-bs-toggle="popover"
+                      data-bs-placement="top"
+                      data-bs-content="Cette formation n'est pas encore disponible"
+                    >
+                      En savoir plus
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="secTemoignage">
+        <div class="container py-5">
+          <div class="secTemoignage-title">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 mb-md-5">
+                <h2 class="">Temoignages étudiants</h2>
+                <hr />
+                <hr class="custom-hr" />
+
+                <p class="lead my-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Inventore assumenda blanditiis labore, aspernatur dolore
+                  veritatis nulla doloremque quaerat nesciunt aliquam
+                  consequuntur dolorem officiis modi quae pariatur. Voluptatem,
+                  mollitia nostrum! Aliquam, vel nesciunt ratione rerum aut
+                  saepe repellendus porro facere quo voluptatem explicabo fugiat
+                  inventore cumque ipsam adipisci. Tempora, quos eligendi.
+                </p>
+              </div>
+
+              <div class="col-lg-8 col-md-6 p-3 shadow">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                  <div class="temoignage-carousel-right">
+                    <div class="carousel-indicators">
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                      ></button>
+
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                      ></button>
+
+                      <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                      ></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="row">
+                          <div class="col-lg-3 col-md-6">
+                            <img
+                              src="assets/images/freepik__candid-image-photography-natural-textures-highly-r__34430.jpeg"
+                              class="d-block"
+                              alt="..."
+                            />
+                          </div>
+
+                          <div class="col-lg-9 col-md-6 ps-lg-4 ps-md-0 my-5 my-md-3">
+                            <h4>Kwon Gee Lukelo Prosper</h4>
+                            <small>Apprenant</small>
+                          </div>
+                        </div>
+
+                        <p class="my-lg-5 my-0">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Amet quia perferendis pariatur, sequi
+                          exercitationem beatae voluptatibus aliquid dolores sit
+                          eius! Ipsum repellat natus laudantium aliquid iusto,
+                          possimus eaque temporibus facere fuga, harum, incidunt
+                          sed distinctio mollitia sit corporis sunt facilis!
+                        </p>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="row">
+                          <div class="col-lg-3 col-md-6">
+                            <img
+                              src="assets/images/freepik__candid-image-photography-natural-textures-highly-r__34430.jpeg"
+                              class="d-block"
+                              alt="..."
+                            />
+                          </div>
+
+                          <div class="col-lg-9 col-md-6 ps-lg-4 ps-md-0 my-5 my-md-3">
+                            <h4>Kwon Gee Lukelo Prosper</h4>
+                            <small>Apprenant</small>
+                          </div>
+                        </div>
+
+                        <p class="my-lg-5 my-0">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Amet quia perferendis pariatur, sequi
+                          exercitationem beatae voluptatibus aliquid dolores sit
+                          eius! Ipsum repellat natus laudantium aliquid iusto,
+                          possimus eaque temporibus facere fuga, harum, incidunt
+                          sed distinctio mollitia sit corporis sunt facilis!
+                        </p>
+                      </div>
+
+                      <div class="carousel-item">
+                        <div class="row">
+                          <div class="col-lg-3 col-md-6">
+                            <img
+                              src="assets/images/freepik__candid-image-photography-natural-textures-highly-r__34430.jpeg"
+                              class="d-block"
+                              alt="..."
+                            />
+                          </div>
+
+                          <div class="col-lg-9 col-md-6 ps-lg-4 ps-md-0 my-5 my-md-3">
+                            <h4>Kwon Gee Lukelo Prosper</h4>
+                            <small>Apprenant</small>
+                          </div>
+                        </div>
+
+                        <p class="my-lg-5 my-0">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Amet quia perferendis pariatur, sequi
+                          exercitationem beatae voluptatibus aliquid dolores sit
+                          eius! Ipsum repellat natus laudantium aliquid iusto,
+                          possimus eaque temporibus facere fuga, harum, incidunt
+                          sed distinctio mollitia sit corporis sunt facilis!
+                        </p>
+                    </div>
+                  </div>
+
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon bg-secondary p-lg-4 p-md-2"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon bg-secondary p-lg-4 p-md-2"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="secApropos bg-body-secondary" id="Apropos">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-lg-4 col-md-8">
+              <img src="assets/images/rb_Apropos.png" alt="" class="d-block w-100">
+            </div>
+
+            <div class="col-lg-8 col-md-4">
+              <div class="secApropos-title">
+                <h2 id="nos-formations">A propos</h2>
+                <hr />
+                <hr class="custom-hr" />
+              </div>
+              
+              <p class="lead fst-italic">
+                <span style="color: #001f57;" class="fw-bold">Histoire : </span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem quo 
+                asperiores ad reiciendis unde. Tempore asperiores, harum eius laborum facere 
+                possimus fuga, repellendus quod sequi nisi dolorum ea officiis id assumenda 
+                rerum ad ducimus! Quo hic fugiat tenetur unde ipsa illum mollitia velit, autem 
+                quos voluptates iusto officiis nisi quibusdam eligendi exercitationem molestias 
+                dolor voluptatum cupiditate. Exercitationem dignissimos ut autem nisi quod tenetur 
+                est animi mollitia, quia nam deserunt delectus! 
+              </p>
+
+              <p class="lead fst-italic">
+                <span style="color: #001f57;" class="fw-bold">Mission : </span> Similique impedit ipsa ab distinctio 
+                quidem molestias fugiat, nemo ut. Sed labore assumenda ut illum, recusandae eius cupiditate. 
+                Natus cumque debitis quo nam reiciendis necessitatibus iusto maxime, in itaque nostrum eaque 
+                pariatur voluptate porro, temporibus recusandae inventore? Quae praesentium adipisci reiciendis 
+                dolorum id exercitationem quidem quos neque debitis? Assumenda deserunt aspernatur, architecto 
+                dolorum maxime accusamus pariatur sint nobis soluta magni perspiciatis quaerat vero. Debitis quos 
+                sed est! Ea perspiciatis impedit facilis sit eveniet adipisci repellat quia, fuga debitis enim maxime!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+      <div class="secContact" id="Contact">
+        <div class="row">
+          <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box">
+            <img src="assets/images/rb_1584.png" class="img-fluid" style="height: 500px" alt=""/>
+          </div>
+  
+          <div class="col-md-6 right-box px-5">
+            <div class="row align-items-center">
+              <div class="secContact-title mb-4">
+                <h2 >Contactez-nous</h2>
+                <hr />
+                <hr class="custom-hr" />
+              </div>
+  
+              <form>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control form-control-lg bg-light fs-6" id="floatingNom" placeholder="Entrez votre nom" required>
+                  <label for="floatingNom">Nom</label>
+                </div>
+  
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control form-control-lg bg-light fs-6" id="floatingPrenom" placeholder="Entrez votre prenom" required>
+                  <label for="floatingPrenom">Prenom</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control form-control-lg bg-light fs-6" id="floatingEmain" placeholder="kwongee@gmail.com" required>
+                  <label for="floatingEmail">Email</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <textarea class="form-control form-control-lg bg-light fs-6" name="" id="floatingMessage" placeholder="Entrez votre message" style="height: 150px;" required></textarea>
+                  <label for="floatingEmail">Message</label>
+                </div>
+  
+                <div class="input-group mb-5">
+                  <input type="submit" value="Envoyer" class="btn btn-lg btn-formation w-100 fs-5"/>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=15.219057798385622%2C-4.3866025140604386%2C15.222920179367067%2C-4.3830937560968&amp;layer=mapnik&amp;marker=-4.384848137138182%2C15.220988988876343"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=-4.384848&amp;mlon=15.220989#map=17/-4.384848/15.220989&amp;layers=NG" style="text-decoration: none; color: #0d41e1; font-size: 17px;">Afficher une carte plus grande</a></small>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="description-footer col-lg-6 col-md-4">
+              <img src="assets/images/logo/1729515069044.png" alt="">
+              <p>
+                Lorem, ipsum dolor sit amet tetur adipisicing elit. Adipisci quaerat accusamus haiores io.
+                Officia modi ducimus ea nihil mollitia incidunt optio nostrum voluptate vitae.
+                Lorem, ipsum dolor sit amet tetur adipisicing elit. Adipisci quaerat accusamus haiores io.
+                Officia modi ducimus ea nihil mollitia incidunt optio nostrum voluptate vitae.
+                Lorem, ipsum dolor sit amet tetur adipisicing elit. Adipisci quaerat accusamus haiores io.
+                Officia modi ducimus ea nihil mollitia incidunt optio nostrum voluptate vitae.
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-3">
+              <h3>Liens importants</h3>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="index.html" class="mylink nav-link"><i class="bi bi-arrow-right-short"></i>Acceuil</a>
+                </li>
+                <li class="nav-item">
+                  <a href="formations.html" class="mylink nav-link"><i class="bi bi-arrow-right-short"></i>Nos formations</a>
+                </li>
+                <li class="nav-item">
+                  <a href="index.html#Apropos" class="mylink nav-link"><i class="bi bi-arrow-right-short"></i>A propos</a>
+                </li>
+                <li class="nav-item">
+                  <a href="index.html#Contact" class="mylink nav-link"><i class="bi bi-arrow-right-short"></i>Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a href="inscription.html" class="mylink nav-link"><i class="bi bi-arrow-right-short"></i>Inscription</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-2">
+              <h3>Formations</h3>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="index.html#patisserie" class="mylink nav-link"><i class="bi bi-arrow-right-short"></i>Patisserie</a>
+                </li>
+                <li class="nav-item">
+                  <a href="index.html#Coiffure" class="mylink nav-link"><i class="bi bi-arrow-right-short"></i>Coiffure</a>
+                </li>
+                <li class="nav-item">
+                  <a href="index.html#Coupe-couture" class="mylink nav-link"><i class="bi bi-arrow-right-short"></i>Coupe-couture</a>
+                </li>
+                <li class="nav-item">
+                  <a href="index.html#Electricité" class="mylink nav-link"><i class="bi bi-arrow-right-short"></i>Electricité</a>
+                </li>
+                <li class="nav-item">
+                  <a href="index.html#Froid" class="mylink nav-link"><i class="bi bi-arrow-right-short"></i>Froid</a>
+                </li>
+                <li class="nav-item">
+                  <a href="index.html#Informatique" class="mylink nav-link"><i class="bi bi-arrow-right-short"></i>Informatique</a>
+                </li>
+                <li class="nav-item">
+                  <a href="index.html#Audiovisuel" class="mylink nav-link"><i class="bi bi-arrow-right-short"></i>Audiovisuel</a>
+                </li>
+                <li class="nav-item">
+                  <a href="index.html#Cuisine" class="mylink nav-link"><i class="bi bi-arrow-right-short"></i>Cuisine</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row text-center mt-5">
+            <p>&copy;Academie St Laurent 2024| Powered by Kwon Gee Lukelo | All rights reserved</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Bootstrap Js -->
+    <script src="vendor/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Activation Popover -->
+    <script>
+      const popoverTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="popover"]'
+      );
+      const popoverList = [...popoverTriggerList].map(
+        (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+      );
+    </script>
+  </body>
+</html>

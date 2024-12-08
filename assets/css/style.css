@@ -1,0 +1,251 @@
+:root {
+  --primary-color: #001f57;
+  --secondary-color: #0d41e1;
+  --tertiary-color: #ffde00;
+  --neutre: #fff;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/****************************/
+/****************************/
+/****BARRE DE NAVIGATION*/
+.header {
+  /* background-image: linear-gradient(315deg, #07c8f9, #0d41e1); */
+  background-image: linear-gradient(315deg, #001f57, #0d41e1);
+  box-shadow: 5px 2px 10px 10px rgba(29, 29, 29, 0.322);
+  padding: 0.5em 0;
+}
+
+.imgbrand {
+  height: 50px;
+}
+
+.text-brand {
+  color: var(--neutre);
+}
+
+.mylink {
+  font-size: 1.1rem;
+  color: var(--neutre);
+}
+
+.mylink:hover {
+  color: var(--tertiary-color) !important;
+}
+
+span {
+  color: var(--tertiary-color);
+}
+/**************************************/
+/**************************************/
+
+/****************************/
+/****************************/
+/****SECTION HERO*/
+.hero {
+  background-image: url("../images/2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 750px;
+}
+
+.hero-text {
+  margin-top: 350px;
+}
+/**************************/
+/**************************/
+
+/****************************/
+/****************************/
+/****Tous les boutons*/
+.btn {
+  background-color: var(--tertiary-color);
+  font-size: 1.2em;
+  color: var(--primary-color);
+  border: none;
+}
+.btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+}
+
+.btn-formation,
+.btn-inscription {
+  background-color: var(--secondary-color);
+  font-size: 1.2em;
+  color: var(--neutre);
+  border: none;
+}
+.btn-formation:hover,
+.btn-inscription {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+}
+
+.btn-inscription-prev {
+  background-color: rgba(185, 183, 183, 0.699);
+  font-size: 1.2em;
+  color: var(--neutre);
+  border: none;
+}
+.btn-inscription-prev:hover {
+  background-color: rgb(161, 159, 159);
+  color: var(--neutre);
+}
+
+.fermer-btn {
+  background-color: none;
+  border: 2px solid var(--secondary-color);
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+.fermer-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+}
+/************************/
+
+/****************************/
+/****************************/
+/****NOS FORMATIONS*/
+.secformation-title,
+.secTemoignage-title,
+.secApropos-title,
+.secContact {
+  padding-top: 55px;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  background-color: var(--secondary-color);
+  width: 50px;
+  margin-top: -5px;
+  opacity: 1;
+  border-radius: 150px;
+}
+
+.custom-hr {
+  width: 20px;
+  height: 3px;
+  margin-bottom: 15px;
+}
+/* *********************/
+/* *********************/
+
+/****************************/
+/****************************/
+/****SECTION TEMOIGNAGE*/
+.carousel-item img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 440px) {
+  .carousel-item img {
+    height: 120px;
+    width: 120px;
+  }
+
+  .temoignage-carousel-right {
+    padding: 4em 4em;
+  }
+}
+@media screen and (max-width: 410px) and (min-width: 381px) {
+  .carousel-item img {
+    height: 90px;
+    width: 90px;
+  }
+
+  .temoignage-carousel-right {
+    padding: 4em 2em;
+  }
+
+  .carousel-item p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 380px) and (min-width: 340px) {
+  .carousel-item img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .temoignage-carousel-right {
+    padding: 4em 1em;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  small {
+    font-size: 0.8rem;
+  }
+
+  .carousel-item p {
+    font-size: 0.9rem;
+  }
+}
+
+.temoignage-carousel-right {
+  padding: 4em 8em;
+}
+/***********************************/
+
+.map {
+  height: 500px;
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+}
+
+/*******************************
+**************************
+**SECTION RECHERCHE****/
+.section-recherche {
+  margin-top: 150px;
+}
+
+.section-recherche .input-group {
+  width: 80%;
+  margin: 0 auto;
+}
+/*****************/
+
+/*******************************
+**************************
+**SECTION INSCRIPTION****/
+.inscription {
+  margin-top: 150px;
+}
+/******************/
+
+/****************************/
+/****************************/
+/****PIED DE PAGE*/
+footer {
+  background-color: #0d41e1;
+  padding: 3em 0 0 0;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+footer img {
+  height: 200px;
+  float: left;
+  margin-right: 15px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
